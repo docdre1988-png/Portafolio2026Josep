@@ -8,6 +8,11 @@
   <link rel="stylesheet" href="styles.css">
 <link rel="icon" type="image/png" href="assets/favicon.png"><link rel="apple-touch-icon" href="assets/favicon.png"></head>
 <body>
+  <dialog id="mobile-menu" class="mobile-menu" aria-label="Menú de navegación">
+    <div class="menu-top"><span class="menu-wordmark">js<svg class="logo-symbol" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20M2 12h20M5 5l14 14M5 19L19 5" fill="none" stroke="currentColor" stroke-width="2.4"/></svg> <small>SOFTWARE CON PROPÓSITO</small></span><button class="menu-close" type="button" aria-label="Cerrar menú"><span aria-hidden="true">×</span></button></div>
+    <div class="menu-content"><p class="menu-kicker">// EXPLORA MI UNIVERSO</p><nav aria-label="Navegación móvil"><a href="#proyectos"><small>01</small>Proyectos<span>↗</span></a><a href="#sobre-mi"><small>02</small>Sobre mí<span>↗</span></a><a href="#enfoque"><small>03</small>Mi enfoque<span>↗</span></a><a href="#contacto"><small>04</small>Contacto<span>↗</span></a></nav></div>
+    <div class="menu-bottom"><p>Una idea puede ser<br>el comienzo de algo grande.</p><a href="https://wa.me/51907279299" target="_blank" rel="noopener noreferrer">Hablemos por WhatsApp ↗</a></div>
+  </dialog>
   <main>
     <section class="hero" id="inicio" aria-label="Presentación de Josep Su">
       <img class="portrait" src="assets/josep-hero.webp" alt="Josep Su con gafas, trabajando con su portátil" fetchpriority="high">
@@ -20,6 +25,7 @@
           <a href="#contacto">Contacto</a>
         </nav>
         <a class="nav-cta" href="https://wa.me/51907279299" target="_blank" rel="noopener noreferrer">Construyamos algo <span>↗</span></a>
+        <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-controls="mobile-menu" aria-expanded="false"><span class="code-menu" aria-hidden="true"><b>{</b><i><span></span><span></span></i><b>}</b></span></button>
       </header>
       <aside class="rail" aria-hidden="true"><span>Developer & software creator</span><i></i><span>JOSEP SU</span></aside>
       <div class="hero-content">
@@ -59,8 +65,10 @@
     </section>
     <section class="contact section" id="contacto"><div class="section-label"><span>04 / LO QUE SIGUE</span><span>Las buenas ideas empiezan con una conversación.</span></div><h2>¿Y si construimos<br>algo que <em>importe?</em></h2><p>Una idea, un problema por resolver o una nueva posibilidad.<br>Ese puede ser el comienzo.</p><a class="contact-note" href="https://wa.me/51907279299" target="_blank" rel="noopener noreferrer">Conversemos por WhatsApp · 907 279 299 <span>↗</span></a><footer><a class="logo" href="#inicio">js<svg class="logo-symbol" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2v20M2 12h20M5 5l14 14M5 19L19 5" fill="none" stroke="currentColor" stroke-width="2.4"/></svg></a><span>Josep Su · Developer & software creator</span><a href="admin.html" class="admin-link">Admin ↗</a><a href="#inicio">Volver arriba ↑</a></footer></section>
   </main>
-<script src="config.js"></script><script src="assets/gallery.bundle.js" defer></script></body>
+<script src="navigation.js" defer></script><script src="config.js"></script><script src="assets/gallery.bundle.js" defer></script></body>
 </html>
+
+
 
 
 

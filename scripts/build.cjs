@@ -5,7 +5,7 @@ const { build } = require('esbuild');
   const root = path.resolve(__dirname, '..');
   const output = path.join(root, 'dist');
   fs.mkdirSync(path.join(output, 'assets'), { recursive:true });
-  for (const name of ['index.html','styles.css','admin.html','admin.css','config.js']) fs.copyFileSync(path.join(root,name), path.join(output,name));
+  for (const name of ['index.html','styles.css','admin.html','admin.css','config.js','navigation.js']) fs.copyFileSync(path.join(root,name), path.join(output,name));
   fs.copyFileSync(path.join(root,'assets/josep-hero.webp'),path.join(output,'assets/josep-hero.webp'));
   fs.copyFileSync(path.join(root,'assets/josep-hero-mobile.jpg'),path.join(output,'assets/josep-hero-mobile.jpg'));
   fs.copyFileSync(path.join(root,'assets/favicon.png'),path.join(output,'assets/favicon.png'));
@@ -15,5 +15,6 @@ const { build } = require('esbuild');
   fs.writeFileSync(path.join(output,'.nojekyll'),'');
   console.log('Build listo: dist/ (solo archivos públicos)');
 })().catch(error=>{console.error(error);process.exitCode=1;});
+
 
 
