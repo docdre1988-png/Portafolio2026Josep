@@ -112,3 +112,5 @@ footer .admin-link{font-size:12px;color:#b3b4ab}footer .admin-link:hover{color:#
 @media(prefers-reduced-motion:reduce){.mobile-menu[open]{animation:none}}
 
 .menu-wordmark .logo-symbol{display:inline-block;vertical-align:middle}
+
+@media(max-width:700px){.hero .portrait{bottom:50px}.hero{padding-bottom:330px}}
