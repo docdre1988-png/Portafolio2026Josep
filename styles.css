@@ -113,4 +113,5 @@ footer .admin-link{font-size:12px;color:#b3b4ab}footer .admin-link:hover{color:#
 
 .menu-wordmark .logo-symbol{display:inline-block;vertical-align:middle}
 
-@media(max-width:700px){.hero .portrait{bottom:50px}.hero{padding-bottom:330px}}
+@media(max-width:700px){.hero .portrait{bottom:25px}.hero{padding-bottom:380px}}
+
