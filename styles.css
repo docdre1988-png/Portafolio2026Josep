@@ -103,3 +103,15 @@ footer .admin-link{font-size:12px;color:#b3b4ab}footer .admin-link:hover{color:#
  .project-frame figcaption{font-size:6px}
  .section{padding-inline:20px}
 }
+/* Vertical portrait supplied for the mobile hero. */
+@media(max-width:700px){
+ .hero{min-height:960px;padding-bottom:420px;background:#fafafa}
+ .portrait{height:100%;width:100%;object-fit:cover;object-position:center bottom;transform:none}
+ .hero:after{display:none}
+ .hero-content{position:relative;z-index:1;padding-top:32px;padding-bottom:24px}
+ .disciplines{margin-bottom:22px}
+ .hero h1{font-size:clamp(106px,29vw,145px)}
+ .hero .scroll{margin-top:14px}
+}
+
+@media(max-width:700px){.portrait{object-fit:contain;object-position:center bottom}.hero{background:#fff}}
