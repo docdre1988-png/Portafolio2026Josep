@@ -1,0 +1,13 @@
+{
+  "name": "josep-su-portfolio",
+  "private": true,
+  "scripts": {
+    "dev": "node server.cjs",
+    "build": "node scripts/build.cjs",
+    "test": "node verify.cjs"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "2.57.4",
+    "esbuild": "0.28.2"
+  }
+}
